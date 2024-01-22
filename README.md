@@ -65,7 +65,6 @@ Put the `use` method inside the `head` tag of your document:
 <head>
     ...
     <?= $vite->use('assets/js/app.js'); ?>
-    ...
 </head>
 ```
 
@@ -83,7 +82,6 @@ Opening the project page we will see the following code:
     <script  type="module" src="http://127.0.0.1:5173/assets/js/app.js"></script>
     <!-- If the mode of production-->
     <script  type="module" src="/build/assets/app-AOYsxs3O.js"></script>
-    ...
 </head>
 ```
 
@@ -100,7 +98,6 @@ Use `app.js` and the style file will be attached automatically:
 <head>
     ...
     <?= $vite->use('assets/js/app.js'); ?>
-    ...
 </head>
 ```
 Output
@@ -114,7 +111,6 @@ Output
     <!-- If the mode of production-->
     <link rel="stylesheet" type="text/css" href="/build/assets/app-WNmNaalN.css" />
     <script  type="module" src="/build/assets/app-AOYsxs3O.js"></script>
-    ...
 </head>
 ```
 
@@ -136,18 +132,17 @@ Using this method in the document file you will need to explicitly set the entry
 ```php
 <head>
     ...
-    <!-- The standard method -->
+    <?php /* The standard method */?>
     <?= $vite->use('assets/styles/root.css'); ?>
     <?= $vite->use('assets/js/example.scss'); ?>
     <?= $vite->use('assets/js/app.js'); ?>
 
-    <!-- To simplify development, use an array with entry points -->
+    <?php /* To simplify development, use an array with entry points */?>
     <?= $vite->use([
       'assets/styles/root.css',
       'assets/js/example.scss',
       'assets/js/app.js',
     ]); ?>
-    ...
 </head>
 ```
 
