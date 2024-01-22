@@ -1,0 +1,27 @@
+{
+    "name": "cleup/vite-php",
+    "description": "Integrating Vite into your project",
+    "keywords": [
+        "vite",
+        "php-vite",
+        "php",
+        "cleup"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/cleup/vite-php",
+    "authors": [
+        {
+            "name": "Eduard Y",
+            "email": "dev@priveted.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cleup\\Foundation\\": "src/"
+        }
+    }
+}
