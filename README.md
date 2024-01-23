@@ -19,7 +19,7 @@ npm create vite@latest
 3. Install the `cleup/vite-plugin` plugin ([https://github.com/cleup/vite-plugin](https://github.com/cleup/vite-plugin)):
 
 ```
-npm i cleup/vite-plugin
+npm i cleup-vite-plugin
 ```
 
 #### Usage
